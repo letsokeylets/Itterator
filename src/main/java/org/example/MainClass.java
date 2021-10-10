@@ -1,13 +1,19 @@
 package org.example;
 
 /**
- * Hello world!
+ * Main Class!
  *
  */
 public class MainClass
 {
     public static void main( String[] args )
     {
-        System.out.println( "Hello World!" );
+        for (int r : new Randoms(90, 100)) {
+            System.out.println("Случайное число: " + r);
+            if (r == 100) {
+                System.out.println("Выпало число 100, давайте на этом закончим");
+                break;
+            }
+        }
     }
 }
